@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muoi Cosmetics</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icon fontanwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Reset css & grid sytem -->
+    <link rel="stylesheet" href="./assets/css/library.css">
+    <link href="./assets/owlCarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <!-- Layout -->
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--newsdetail-->
+    <link rel="stylesheet" href="./assets/css/newsdetail.css">
+   
+    <!-- Owl caroucel Js-->
+    <script src="./assets/owlCarousel/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <!--header-->
+        <div class="header scrolling" id="myHeader">
+            <div class="grid wide">
+                <div class="header__top">
+                    <!--logo-->
+                    <div class="navbar-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="index.html" class="header_logo">
+                        <img src="./assets/img/Muối Cosmetics (3).png" alt="" class="logo">
+                    </a>
+                    <!--Thanh tìm kiếm-->
+                    <div class="header__search">
+                        <div class="header__search-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm">
+                            <a class="header__search-icon" href="#">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Đăng ký đăng nhập-->
+                    <div class="header__account">
+                        <a href="#my-Login" class="header__account-login">Đăng Nhập</a>
+                        <a href="#my-Register" class="header__account-register">Đăng Kí</a>
+                    </div>
+                    <!-- Giỏ hàng -->
+                    <div class="header__cart have" href="#">
+                        <i class="fas fa-shopping-basket"></i>
+                        <div class="header__cart-amount">0</div>
+                        <div class="header__cart-wrap">
+                            <a href="cart.html" class="btn btn--default cart-btn">Xem giỏ hàng</a>
+                            <a href="pay.html" class="btn btn--default cart-btn orange">Thanh toán</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item nav__search">
+                        <div class="nav__search-wrap">
+                            <input class="nav__search-input" type="text" name="" id="" placeholder="Tìm sản phẩm...">
+                        </div>
+                        <div class="nav__search-btn">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </li>
+                    <li class="header__nav-item authen-form">
+                        <a href="#" class="header__nav-link">Tài Khoản</a>
+                        <ul class="sub-nav">
+                            <li class="sub-nav__item">
+                                <a href="#my-Login" class="sub-nav__link">Đăng Nhập</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="#my-Register" class="sub-nav__link">Đăng Kí</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item index">
+                        <a href="index.html" class="header__nav-link">Trang chủ</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="news.html" class="header__nav-link">Khuyến mãi</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">sản phẩm</a>
+                        <div class="sub-nav-wrap grid wide">
+                            <ul class="sub-nav">
+                                <li class="sub-nav__item">
+                                    <a href="" class="sub-nav__link heading">Dưỡng da</a>
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a href="listProduct.html" class="sub-nav__link">Sữa rửa mặt</a>
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a href="listProduct.html" class="sub-nav__link">Nước tẩy trang</a>
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a href="listProduct.html" class="sub-nav__link">Kem dưỡng</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-nav">
+                                <li class="sub-nav__item">
+                                    <a href="" class="sub-nav__link heading">Trang điểm</a>
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a href="listProduct.html" class="sub-nav__link">Son</a>
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a href="listProduct.html" class="sub-nav__link">Phấn</a>
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a href="listProduct.html" class="sub-nav__link">Cusion</a>
+                                </li>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="news.html" class="header__nav-link">Tin Tức</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="contact.html" class="header__nav-link">Liên Hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <!--/header end-->
+
+    <!--newsdetail-->
+    <div class="mains">
+        <div class="grid wide">
+            <div class="main__taskbar">
+                <div class="main__breadcrumb">
+                    <div class="breadcrumb__item">
+                        <a href="index.html" class="breadcrumb__link">Trang chủ</a>
+                    </div>
+                    <div class="breadcrumb__item">
+                        <a href="#" class="breadcrumb__link">Chi tiết tin tức</a>
+                    </div>
+                </div>
+            </div>            
+        </div> 
+    </div>                 
+    <!--newsdetail end-->
+    <main id="main" class="">
+        <div id="content" class="blog-wrapper blog-single page-wrapper">
+            <div class="row ">
+                <div class="large-9 col">
+                    <article id="post-2042" class="post-2042 post type-post status-publish format-standard has-post-thumbnail hentry category-tin-tuc">
+                        <div class="article-inner ">
+                            <header class="entry-header">
+                                <div class="entry-header-text entry-header-text-top text-center">
+                                    <h6 class="entry-category is-xsmall">
+                                        <a href=""></a>
+                                    </h6>
+                                    <h1 class="entry-title">Đánh bật thâm nám, trắng sáng ngọc trai cùng bộ 3 sản phẩm Louisviel</h1>
+                                    <div class="entry-divider is-divider small"></div>
+                                    <div class="entry-meta is-small">
+                                        <span class="author">
+                                            By <aut>Muối_Cosmetics</aut>
+                                        </span>
+                                        <span>16.11.2023 </span>
+                                    </div>
+                                </div>
+                                <div class="entry-image relative">
+                                    <a href="https://myphamome.com/danh-bat-tham-nam-trang-sang-ngoc-trai-cung-bo-3-san-pham-louisviel/">
+                                        <img width="1020" height="574" src="https://myphamome.com/wp-content/uploads/2023/11/louisviel.png" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="https://myphamome.com/wp-content/uploads/2023/11/louisviel.png 1024w, https://myphamome.com/wp-content/uploads/2023/11/louisviel-300x169.png 300w, https://myphamome.com/wp-content/uploads/2023/11/louisviel-768x432.png 768w, https://myphamome.com/wp-content/uploads/2023/11/louisviel-1000x563.png 1000w" sizes="(max-width: 1020px) 100vw, 1020px"/>
+                                    </a>
+                                </div>
+                            </header>
+                            <div class="entry-content single-page">
+                                <p>
+                                    <i>
+                                        <span style="font-weight: 400;">Nám da, tàn nhang, vết thâm do mụn để lại và làn da đen sạm luôn là nỗi ám ảnh của phái đẹp khi nó ảnh hưởng trực tiếp tới vẻ bề ngoài của nhiều chị em, khiến họ không thể nào tự tin khi giao tiếp với người đối diện. Tuy nhiên, với Bộ sản phẩm giảm nám sạm, tàn nhang, mờ thâm mụn và dưỡng trắng cao cấp Louisviel, nỗi ám ảnh ấy của chị em sẽ được xua tan nhé!</span>
+                                    </i>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">Về Louisviel, đây là thương hiệu mỹ phẩm Hàn Quốc cao cấp, nổi bật với những sản phẩm chăm sóc da chất lượng, an toàn và hiệu quả sử dụng thành phần tự nhiên và công nghệ tiên tiến. Bộ sản phẩm xóa mờ thâm nám, dưỡng da trắng sáng từ Lousviel gồm có 3 sản phẩm:</span>
+                                </p>
+                                <ul>
+                                    <li style="font-weight: 400;" aria-level="1">
+                                        <span style="font-weight: 400;">Toner dưỡng sáng, thu nhỏ lỗ chân lông &#8211;Intensive Whitening Vita Toner</span>
+                                    </li>
+                                    <li style="font-weight: 400;" aria-level="1">
+                                        <span style="font-weight: 400;">Huyết thanh dưỡng trắng, trị nám &#8211;Intensive Whitening Vita Serum</span>
+                                    </li>
+                                    <li style="font-weight: 400;" aria-level="1">
+                                        <span style="font-weight: 400;">Kem dưỡng trắng, trị nám chuyên sâu &#8211;Intensive Whitening Vita Cream</span>
+                                    </li>
+                                </ul>
+                                <p>
+                                    <span style="font-weight: 400;">Bộ sản phẩm đặc biệt phù hợp với những người có làn da nhiều thâm mụn, ngăm đen, thô ráp, không đều màu, lỗ chân lông to. </span>
+                                </p>
+                                <p>
+                                    <b style="color: #333333; font-size: 14.4px;">1. Toner dưỡng sáng, thu nhỏ lỗ chân lông Intensive Whitening Vita Toner</b>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">Intensive Whitening Vita Toner Louisviel thuộc dòng toner dưỡng da chuyên sâu thế hệ mới. Toner đóng vai trò như một bước đệm hỗ trợ cho quy trình skincare trở nên hiệu quả hơn. Đồng thời toner sẽ giúp làm mềm lớp sừng để giúp lỗ chân lông được sạch sâu, đưa da trở về độ pH lý tưởng. Dòng toner của nhà Louisviel, ngoài khả năng làm da sạch sâu, còn giúp thu nhỏ lỗ chân lông, dưỡng da trắng sáng, rạng rỡ. </span>
+                                </p>
+                                <figure id="attachment_2043" aria-describedby="caption-attachment-2043" style="width: 600px" class="wp-caption aligncenter">
+                                    <img decoding="async" loading="lazy" class="size-full wp-image-2043" src="https://myphamome.com/wp-content/uploads/2023/11/Toner.png" alt="" width="600" height="450" srcset="https://myphamome.com/wp-content/uploads/2023/11/Toner.png 600w, https://myphamome.com/wp-content/uploads/2023/11/Toner-300x225.png 300w" sizes="(max-width: 600px) 100vw, 600px"/>
+                                    <figcaption id="caption-attachment-2043" class="wp-caption-text">Toner dưỡng sáng, thu nhỏ lỗ chân lông Intensive Whitening Vita Toner</figcaption>
+                                </figure>
+                                <p>
+                                    <b>* Thành phần:</b>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">– AHA: Tẩy tế bào chết, cải thiện tone màu da, giúp da mềm mượt.</span>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">– Hyaluronic Acid: Cấp ẩm x7 lần, làm đầy nếp nhăn, tái tạo tế bào.</span>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">– Niacinamide: Làm đều màu da, thu nhỏ lỗ chân lông, dưỡng da sáng hồng.</span>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">– Beta-glucan: Làm dịu da kích ứng, cân bằng độ pH.</span>
+                                </p>
+                                <p>
+                                    <b style="color: #333333; font-size: 14.4px;">2. Huyết thanh dưỡng trắng, trị nám Intensive Whitening Vita Serum</b>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">Sau bước toner, là bước serum dưỡng trắng, trị nám, Louisviel mang đến dòng sản phẩm Intensive Whitening Vita Serum. Với chất serum mỏng nhẹ, thẩm thấu nhanh, sản phẩm giúp cung cấp độ ẩm, làm đầy nếp nhăn, chống lão hóa, giúp da luôn ẩm mượt, mịn màng, tươi trẻ. Chỉ cần 1 giọt tinh chất Intensive Whitening Vita mỗi sáng và tối, bạn đã có thể cảm nhận được sự thay đổi kỳ diệu trên làn da.</span>
+                                </p>
+                                <figure id="attachment_2045" aria-describedby="caption-attachment-2045" style="width: 600px" class="wp-caption aligncenter">
+                                    <img decoding="async" loading="lazy" class="size-full wp-image-2045" src="https://myphamome.com/wp-content/uploads/2023/11/Serum.png" alt="" width="600" height="450" srcset="https://myphamome.com/wp-content/uploads/2023/11/Serum.png 600w, https://myphamome.com/wp-content/uploads/2023/11/Serum-300x225.png 300w" sizes="(max-width: 600px) 100vw, 600px"/>
+                                    <figcaption id="caption-attachment-2045" class="wp-caption-text">Huyết thanh dưỡng trắng, trị nám Intensive Whitening Vita Serum</figcaption>
+                                </figure>
+                                <p>
+                                    <b>* Thành phần:</b>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">– Vita-10 Some (10 loại vitamin): Với chiết xuất citrus (họ cam, quýt), Niacinamide và Vitamin C có tác dụng ức chế sản sinh và kích hoạt sắc tố melanin, ngăn chặn sự sản sinh của melanin – thủ phạm chính gây ra vết nám, tàn nhang, gây thâm sạm da.</span>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">– Moist-7 Complex (Hyaluronic acid gấp 7 lần): Cung cấp độ ẩm cho da từ trong ra ngoài với axit hyaluronic có trọng lượng phân tử cực thấp.</span>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">– Phân tử nước ProVitamin B5: Giúp làm trắng và cải thiện nếp nhăn, cải thiện hàng rào bảo vệ da và duy trì tình trạng da khỏe mạnh.</span>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">– Alpha-bisabolol, một thành phần dưỡng trắng tự nhiên, adenosine và provitamin B5, các thành phần cải thiện nếp nhăn được Bộ An toàn Thực phẩm và Dược phẩm Hàn Quốc công bố, được bào chế để kích hoạt thêm hiệu quả làm trắng và cải thiện nếp nhăn.</span>
+                                </p>
+                                <p>
+                                    <b style="color: #333333; font-size: 14.4px;">3. Kem dưỡng trắng, trị nám chuyên sâu Intensive Whitening Vita Cream</b>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">Sản phẩm cuối cùng trong bộ sản phẩm là kem dưỡng trắng, trị nám chuyên sâu &#8211;Intensive Whitening Vita Cream. Bên cạnh chức năng cơ bản của 1 kem dưỡng giúp khóa ẩm, cung cấp độ ẩm cho da. Dòng kem dưỡng từ nhà Louisviel với chất kem mỏng nhẹ, thẩm thấu nhanh, giúp da luôn ẩm mượt, mịn màng, tươi trẻ, đồng thời dưỡng trắng, đặc trị thâm mụn, nám, tàn nhang vô cùng hiệu quả. Từ đó, giúp những người đang gặp vấn đề về thâm mụn, làn da xỉn màu, đánh bay sạm nám, cải thiện tone da rõ rệt. </span>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">Ngoài ra, sản phẩm cũng giúp làm dịu, cấp ẩm, giúp da loại bỏ những nếp nhăn, củng cố hàng rào bảo vệ da và làm cho cấu trúc da mịn màng bóng khỏe. </span>
+                                </p>
+                                <figure id="attachment_2044" aria-describedby="caption-attachment-2044" style="width: 600px" class="wp-caption aligncenter">
+                                    <img decoding="async" loading="lazy" class="size-full wp-image-2044" src="https://myphamome.com/wp-content/uploads/2023/11/Cream.png" alt="" width="600" height="450" srcset="https://myphamome.com/wp-content/uploads/2023/11/Cream.png 600w, https://myphamome.com/wp-content/uploads/2023/11/Cream-300x225.png 300w" sizes="(max-width: 600px) 100vw, 600px"/>
+                                    <figcaption id="caption-attachment-2044" class="wp-caption-text">Kem dưỡng trắng, trị nám chuyên sâu Intensive Whitening Vita Cream</figcaption>
+                                </figure>
+                                <p>
+                                    <strong>* Thành phần: </strong>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">– Vita-10 Some (10 loại vitamin): Với chiết xuất citrus (họ cam, quýt), Niacinamide và Vitamin C có tác dụng ức chế sản sinh và kích hoạt sắc tố melanin, ngăn chặn sự sản sinh của melanin – thủ phạm chính gây ra vết nám, tàn nhang, gây thâm sạm da.</span>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">– Moist-7 Complex (Hyaluronic acid gấp 7 lần): Cung cấp độ ẩm cho da từ trong ra ngoài với axit hyaluronic có trọng lượng phân tử cực thấp.</span>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">– Phân tử nước ProVitamin B5: Giúp làm trắng và cải thiện nếp nhăn, cải thiện hàng rào bảo vệ da và duy trì tình trạng da khỏe mạnh.</span>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">– Alpha-bisabolol, một thành phần dưỡng trắng tự nhiên, adenosine và provitamin B5, các thành phần cải thiện nếp nhăn được Bộ An toàn Thực phẩm và Dược phẩm Hàn Quốc công bố, được bào chế để kích hoạt thêm hiệu quả làm trắng và cải thiện nếp nhăn.</span>
+                                </p>
+                                <p>
+                                    <span style="font-weight: 400;">Bộ sản phẩm được đánh giá cao bởi nhiều khách hàng trong nước và trên thế giới, đặc biệt là thị trường Hàn Quốc bởi khả năng dưỡng trắng, xóa mờ thâm nám vô cùng hiệu quả. Các thành phần đều đạt tiêu chuẩn EWG. Nếu da bạn có tình trạng sạm màu, nhiều thâm mụn,&#8230;thì đừng bỏ qua bộ 3 sản phẩm dưỡng trắng, xóa mờ thâm nám này của nhà Louisviel nhé. </span>
+                                </p>
+                                <div class="blog-meta">
+                                    <div class="row align-middle">
+                                        <div class="col large-6">
+                                            <div class="blog-tag"></div>
+                                        </div>
+                                        <div class="col large-6">
+                                            <div class="blog-share">
+                                                <div class="social-icons share-icons share-row relative">
+                                                    <span class="share-icons-title">Chia sẻ &#58;</span>
+                                                    <a href="https://www.facebook.com/sharer.php?u=https://myphamome.com/danh-bat-tham-nam-trang-sang-ngoc-trai-cung-bo-3-san-pham-louisviel/" data-label="Facebook" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon plain tooltip facebook" title="Chia sẻ trên Facebook" aria-label="Chia sẻ trên Facebook">
+                                                        <i class="icon-facebook"></i>
+                                                    </a>
+                                                    <a href="https://twitter.com/share?url=https://myphamome.com/danh-bat-tham-nam-trang-sang-ngoc-trai-cung-bo-3-san-pham-louisviel/" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon plain tooltip twitter" title="Chia sẻ trên Twitter" aria-label="Chia sẻ trên Twitter">
+                                                        <i class="icon-twitter"></i>
+                                                    </a>
+                                                    <a href="https://pinterest.com/pin/create/button/?url=https://myphamome.com/danh-bat-tham-nam-trang-sang-ngoc-trai-cung-bo-3-san-pham-louisviel/&amp;media=https://myphamome.com/wp-content/uploads/2023/11/louisviel.png&amp;description=%C4%90%C3%A1nh%20b%E1%BA%ADt%20th%C3%A2m%20n%C3%A1m%2C%20tr%E1%BA%AFng%20s%C3%A1ng%20ng%E1%BB%8Dc%20trai%20c%C3%B9ng%20b%E1%BB%99%203%20s%E1%BA%A3n%20ph%E1%BA%A9m%20Louisviel" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon plain tooltip pinterest" title="Pin trên Pinterest" aria-label="Pin trên Pinterest">
+                                                        <i class="icon-pinterest"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div id="comments" class="comments-area">
+                        <h2 class="comments-title text-center mb">
+                            <span>Để lại bình luận</span>
+                        </h2>
+                        <div id="commentsPost">
+                            <div id="commentform">
+                                <div class="cancel-comment-reply">
+                                    <small>
+                                        <a rel="nofollow" id="cancel-comment-reply-link" href="/danh-bat-tham-nam-trang-sang-ngoc-trai-cung-bo-3-san-pham-louisviel/#respond" style="display:none;">Nhấp chuột vào đây để hủy trả lời.</a>
+                                    </small>
+                                </div>
+                                <div id="commentsPostForm">
+                                    <form action="https://myphamome.com/wp-comments-post.php" method="post" id="commentformPost">
+                                        <div class="row row-small">
+                                            <div class="col large-12">
+                                                <textarea class="form-control" name="comment" id="comment" cols="50" rows="4" tabindex="4" placeholder="Lời nhắn..."></textarea>
+                                            </div>
+                                            <div class="col large-6">
+                                                <input class="form-control" type="text" name="author" id="author" value="" tabindex="1" aria-required="true" placeholder="Họ và tên * "/>
+                                            </div>
+                                            <div class="col large-6">
+                                                <input class="form-control" type="text" name="phone" id="phone" value="" size="22" tabindex="2" aria-required="true" placeholder="Số điện thoại * "/>
+                                            </div>
+                                            <div class="col large-12">
+                                                <input class="form-control" type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required="true" placeholder="Email * "/>
+                                            </div>
+                                            <div class="col large-12">
+                                                <p class="comment-form-cookies-consent mb-0">
+                                                    <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" autocomplete="off" class="valid  mb-0" aria-invalid="false">
+                                                    <label for="wp-comment-cookies-consent">Lưu tên, email và số điện thoại của tôi trong trình duyệt này cho lần tôi nhận xét tiếp theo.</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="form-btn">
+                                            <input class="button uppercase" name="submit" type="submit" id="submit" tabindex="5" value="Gửi"/>
+                                            <input type='hidden' name='comment_post_ID' value='2042' id='comment_post_ID'/>
+                                            <input type='hidden' name='comment_parent' id='comment_parent' value='0'/>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-sidebar large-3 col">
+                    <div id="secondary" class="widget-area " role="complementary">
+                        <aside id="search-2" class="widget widget_search">
+                            <span class="widget-title ">
+                                <span>Tìm kiếm</span>
+                            </span>
+                            <div class="is-divider small"></div>
+                            <form method="get" class="searchform" action="https://myphamome.com/" role="search">
+                                <div class="flex-row relative">
+                                    <div class="flex-col flex-grow">
+                                        <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Bạn cần tìm gì..."/>
+                                    </div>
+                                    <div class="flex-col">
+                                        <button type="submit" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Gửi đi">
+                                            <i class="icon-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="live-search-results text-left z-top"></div>
+                            </form>
+                        </aside>
+                        <aside id="nav_menu-2" class="widget widget_nav_menu">
+                            <span class="widget-title ">
+                                <span>Danh mục tin tức</span>
+                            </span>
+                            <div class="is-divider small"></div>
+                            <div class="menu-tin-tuc-container">
+                                <ul id="menu-tin-tuc" class="menu">
+                                    <li id="menu-item-384" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-384">
+                                        <a href="https://myphamome.com/category/tin-tuc/tin-chuyen-nganh/">Tin chuyên ngành</a>
+                                    </li>
+                                    <li id="menu-item-385" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-385">
+                                        <a href="https://myphamome.com/category/tin-tuc/tin-noi-bat/">Tin nổi bật</a>
+                                    </li>
+                                    <li id="menu-item-386" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-386">
+                                        <a href="https://myphamome.com/category/tin-tuc/tin-noi-bo/">Tin nội bộ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <aside id="list_new_posts-2" class="widget widget_list_new_posts">
+                            <span class="widget-title ">
+                                <span>Bài viết mới nhất</span>
+                            </span>
+                            <div class="is-divider small"></div>
+                            <div class="list-post-item">
+                                <div id="post-2062" class="clearfix align_left  post-2062 post type-post status-publish format-standard has-post-thumbnail hentry category-khong-phan-loai">
+                                    <a class="img" href="https://myphamome.com/tron-bo-san-pham-cham-da-sang-min-sach-tham-mun-deu-mau-cua-make9/" title="Trọn bộ sản phẩm chăm da sáng mịn, sạch thâm mụn, đều màu của Make9">
+                                        <img width="865" height="650" src="https://myphamome.com/wp-content/uploads/2023/11/Web-2.jpg" class="attachment-large size-large wp-post-image" alt="Trọn bộ sản phẩm chăm da sáng mịn, sạch thâm mụn, đều màu của Make9" decoding="async" loading="lazy" srcset="https://myphamome.com/wp-content/uploads/2023/11/Web-2.jpg 865w, https://myphamome.com/wp-content/uploads/2023/11/Web-2-300x225.jpg 300w, https://myphamome.com/wp-content/uploads/2023/11/Web-2-768x577.jpg 768w" sizes="(max-width: 865px) 100vw, 865px"/>
+                                    </a>
+                                    <div class="align_content">
+                                        <div class="post-meta is-normal">
+                                            <span class="post-date">22.11.2023</span>
+                                        </div>
+                                        <h3>
+                                            <a href="https://myphamome.com/tron-bo-san-pham-cham-da-sang-min-sach-tham-mun-deu-mau-cua-make9/" title="Trọn bộ sản phẩm chăm da sáng mịn, sạch thâm mụn, đều màu của Make9">Trọn bộ sản phẩm chăm da sáng mịn, sạch thâm mụn, đều màu của Make9 </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div id="post-2051" class="clearfix align_left  post-2051 post type-post status-publish format-standard has-post-thumbnail hentry category-tin-tuc">
+                                    <a class="img" href="https://myphamome.com/nuoc-uong-tre-hoa-da-wellit-renew-collagen/" title="Nước uống trẻ hóa da Wellit Re:new Collagen">
+                                        <img width="1020" height="574" src="https://myphamome.com/wp-content/uploads/2023/11/Web1-avatar-2.png" class="attachment-large size-large wp-post-image" alt="Nước uống trẻ hóa da Wellit Re:new Collagen" decoding="async" loading="lazy" srcset="https://myphamome.com/wp-content/uploads/2023/11/Web1-avatar-2.png 1024w, https://myphamome.com/wp-content/uploads/2023/11/Web1-avatar-2-300x169.png 300w, https://myphamome.com/wp-content/uploads/2023/11/Web1-avatar-2-768x432.png 768w, https://myphamome.com/wp-content/uploads/2023/11/Web1-avatar-2-1000x563.png 1000w" sizes="(max-width: 1020px) 100vw, 1020px"/>
+                                    </a>
+                                    <div class="align_content">
+                                        <div class="post-meta is-normal">
+                                            <span class="post-date">20.11.2023</span>
+                                        </div>
+                                        <h3>
+                                            <a href="https://myphamome.com/nuoc-uong-tre-hoa-da-wellit-renew-collagen/" title="Nước uống trẻ hóa da Wellit Re:new Collagen">Nước uống trẻ hóa da Wellit Re:new Collagen </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div id="post-2042" class="clearfix align_left  post-2042 post type-post status-publish format-standard has-post-thumbnail hentry category-tin-tuc">
+                                    <a class="img" href="https://myphamome.com/danh-bat-tham-nam-trang-sang-ngoc-trai-cung-bo-3-san-pham-louisviel/" title="Đánh bật thâm nám, trắng sáng ngọc trai cùng bộ 3 sản phẩm Louisviel">
+                                        <img width="1020" height="574" src="https://myphamome.com/wp-content/uploads/2023/11/louisviel.png" class="attachment-large size-large wp-post-image" alt="Đánh bật thâm nám, trắng sáng ngọc trai cùng bộ 3 sản phẩm Louisviel" decoding="async" loading="lazy" srcset="https://myphamome.com/wp-content/uploads/2023/11/louisviel.png 1024w, https://myphamome.com/wp-content/uploads/2023/11/louisviel-300x169.png 300w, https://myphamome.com/wp-content/uploads/2023/11/louisviel-768x432.png 768w, https://myphamome.com/wp-content/uploads/2023/11/louisviel-1000x563.png 1000w" sizes="(max-width: 1020px) 100vw, 1020px"/>
+                                    </a>
+                                    <div class="align_content">
+                                        <div class="post-meta is-normal">
+                                            <span class="post-date">16.11.2023</span>
+                                        </div>
+                                        <h3>
+                                            <a href="https://myphamome.com/danh-bat-tham-nam-trang-sang-ngoc-trai-cung-bo-3-san-pham-louisviel/" title="Đánh bật thâm nám, trắng sáng ngọc trai cùng bộ 3 sản phẩm Louisviel">Đánh bật thâm nám, trắng sáng ngọc trai cùng bộ 3 sản phẩm Louisviel </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div id="post-2037" class="clearfix align_left  post-2037 post type-post status-publish format-standard has-post-thumbnail hentry category-khong-phan-loai">
+                                    <a class="img" href="https://myphamome.com/tay-te-bao-chet-bi-quyet-cho-lan-da-min-mang/" title="Tẩy tế bào chết &#8211; Bí quyết cho làn da mịn màng">
+                                        <img width="1020" height="574" src="https://myphamome.com/wp-content/uploads/2023/11/Web-1.png" class="attachment-large size-large wp-post-image" alt="Tẩy tế bào chết &#8211; Bí quyết cho làn da mịn màng" decoding="async" loading="lazy" srcset="https://myphamome.com/wp-content/uploads/2023/11/Web-1.png 1024w, https://myphamome.com/wp-content/uploads/2023/11/Web-1-300x169.png 300w, https://myphamome.com/wp-content/uploads/2023/11/Web-1-768x432.png 768w, https://myphamome.com/wp-content/uploads/2023/11/Web-1-1000x563.png 1000w" sizes="(max-width: 1020px) 100vw, 1020px"/>
+                                    </a>
+                                    <div class="align_content">
+                                        <div class="post-meta is-normal">
+                                            <span class="post-date">13.11.2023</span>
+                                        </div>
+                                        <h3>
+                                            <a href="https://myphamome.com/tay-te-bao-chet-bi-quyet-cho-lan-da-min-mang/" title="Tẩy tế bào chết &#8211; Bí quyết cho làn da mịn màng">Tẩy tế bào chết &#8211;Bí quyết cho làn da mịn màng </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div id="post-2020" class="clearfix align_left  post-2020 post type-post status-publish format-standard has-post-thumbnail hentry category-khong-phan-loai">
+                                    <a class="img" href="https://myphamome.com/tinh-chat-duong-trang-mo-tham-tri-nam-natural-radiance-essence/" title="Tinh chất dưỡng trắng, mờ thâm, trị nám &#8211; Natural Radiance Essence">
+                                        <img width="1020" height="714" src="https://myphamome.com/wp-content/uploads/2023/11/avatar-1-1024x717.png" class="attachment-large size-large wp-post-image" alt="Tinh chất dưỡng trắng, mờ thâm, trị nám &#8211; Natural Radiance Essence" decoding="async" loading="lazy" srcset="https://myphamome.com/wp-content/uploads/2023/11/avatar-1-1024x717.png 1024w, https://myphamome.com/wp-content/uploads/2023/11/avatar-1-300x210.png 300w, https://myphamome.com/wp-content/uploads/2023/11/avatar-1-768x538.png 768w, https://myphamome.com/wp-content/uploads/2023/11/avatar-1-1000x700.png 1000w, https://myphamome.com/wp-content/uploads/2023/11/avatar-1.png 1200w" sizes="(max-width: 1020px) 100vw, 1020px"/>
+                                    </a>
+                                    <div class="align_content">
+                                        <div class="post-meta is-normal">
+                                            <span class="post-date">08.11.2023</span>
+                                        </div>
+                                        <h3>
+                                            <a href="https://myphamome.com/tinh-chat-duong-trang-mo-tham-tri-nam-natural-radiance-essence/" title="Tinh chất dưỡng trắng, mờ thâm, trị nám &#8211; Natural Radiance Essence">Tinh chất dưỡng trắng, mờ thâm, trị nám &#8211;Natural Radiance Essence </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div id="post-2014" class="clearfix align_left  post-2014 post type-post status-publish format-standard has-post-thumbnail hentry category-khong-phan-loai">
+                                    <a class="img" href="https://myphamome.com/tim-hieu-2-dong-nuoc-uong-wellit-collagen-tre-hoa-tot-nhat-hien-nay/" title="Tìm hiểu 2 dòng nước uống Wellit Collagen trẻ hóa tốt nhất hiện nay">
+                                        <img width="1020" height="1020" src="https://myphamome.com/wp-content/uploads/2023/11/Wellit_1-1024x1024.jpg" class="attachment-large size-large wp-post-image" alt="Tìm hiểu 2 dòng nước uống Wellit Collagen trẻ hóa tốt nhất hiện nay" decoding="async" loading="lazy" srcset="https://myphamome.com/wp-content/uploads/2023/11/Wellit_1-1024x1024.jpg 1024w, https://myphamome.com/wp-content/uploads/2023/11/Wellit_1-300x300.jpg 300w, https://myphamome.com/wp-content/uploads/2023/11/Wellit_1-150x150.jpg 150w, https://myphamome.com/wp-content/uploads/2023/11/Wellit_1-768x768.jpg 768w, https://myphamome.com/wp-content/uploads/2023/11/Wellit_1-1536x1536.jpg 1536w, https://myphamome.com/wp-content/uploads/2023/11/Wellit_1-1000x1000.jpg 1000w, https://myphamome.com/wp-content/uploads/2023/11/Wellit_1-100x100.jpg 100w, https://myphamome.com/wp-content/uploads/2023/11/Wellit_1.jpg 2000w" sizes="(max-width: 1020px) 100vw, 1020px"/>
+                                    </a>
+                                    <div class="align_content">
+                                        <div class="post-meta is-normal">
+                                            <span class="post-date">06.11.2023</span>
+                                        </div>
+                                        <h3>
+                                            <a href="https://myphamome.com/tim-hieu-2-dong-nuoc-uong-wellit-collagen-tre-hoa-tot-nhat-hien-nay/" title="Tìm hiểu 2 dòng nước uống Wellit Collagen trẻ hóa tốt nhất hiện nay">Tìm hiểu 2 dòng nước uống Wellit Collagen trẻ hóa tốt nhất hiện nay </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div id="post-2001" class="clearfix align_left  post-2001 post type-post status-publish format-standard has-post-thumbnail hentry category-khong-phan-loai">
+                                    <a class="img" href="https://myphamome.com/combo-giam-mun-xoa-mo-tham-nang-tone-da-trang-sang-cua-reason-a-beauty/" title="Combo giảm mụn, xóa mờ thâm, nâng tone da trắng sáng của Reason A Beauty">
+                                        <img width="1020" height="1020" src="https://myphamome.com/wp-content/uploads/2023/10/Snapinsta.app_395719989_2751454264994690_1553758206399657001_n_1080-1024x1024.jpg" class="attachment-large size-large wp-post-image" alt="Combo giảm mụn, xóa mờ thâm, nâng tone da trắng sáng của Reason A Beauty" decoding="async" loading="lazy" srcset="https://myphamome.com/wp-content/uploads/2023/10/Snapinsta.app_395719989_2751454264994690_1553758206399657001_n_1080-1024x1024.jpg 1024w, https://myphamome.com/wp-content/uploads/2023/10/Snapinsta.app_395719989_2751454264994690_1553758206399657001_n_1080-300x300.jpg 300w, https://myphamome.com/wp-content/uploads/2023/10/Snapinsta.app_395719989_2751454264994690_1553758206399657001_n_1080-150x150.jpg 150w, https://myphamome.com/wp-content/uploads/2023/10/Snapinsta.app_395719989_2751454264994690_1553758206399657001_n_1080-768x768.jpg 768w, https://myphamome.com/wp-content/uploads/2023/10/Snapinsta.app_395719989_2751454264994690_1553758206399657001_n_1080-1000x1000.jpg 1000w, https://myphamome.com/wp-content/uploads/2023/10/Snapinsta.app_395719989_2751454264994690_1553758206399657001_n_1080-100x100.jpg 100w, https://myphamome.com/wp-content/uploads/2023/10/Snapinsta.app_395719989_2751454264994690_1553758206399657001_n_1080.jpg 1080w" sizes="(max-width: 1020px) 100vw, 1020px"/>
+                                    </a>
+                                    <div class="align_content">
+                                        <div class="post-meta is-normal">
+                                            <span class="post-date">30.10.2023</span>
+                                        </div>
+                                        <h3>
+                                            <a href="https://myphamome.com/combo-giam-mun-xoa-mo-tham-nang-tone-da-trang-sang-cua-reason-a-beauty/" title="Combo giảm mụn, xóa mờ thâm, nâng tone da trắng sáng của Reason A Beauty">Combo giảm mụn, xóa mờ thâm, nâng tone da trắng sáng của Reason A Beauty </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div id="post-1991" class="clearfix align_left  post-1991 post type-post status-publish format-standard has-post-thumbnail hentry category-khong-phan-loai">
+                                    <a class="img" href="https://myphamome.com/kem-xoa-tham-mo-seo-tai-tao-da-make9-hydration-peptide-cream/" title="Kem xóa thâm, mờ sẹo, tái tạo da Make9 Hydration Peptide Cream">
+                                        <img width="1020" height="714" src="https://myphamome.com/wp-content/uploads/2023/10/Cream-1-1024x717.png" class="attachment-large size-large wp-post-image" alt="Kem xóa thâm, mờ sẹo, tái tạo da Make9 Hydration Peptide Cream" decoding="async" loading="lazy" srcset="https://myphamome.com/wp-content/uploads/2023/10/Cream-1-1024x717.png 1024w, https://myphamome.com/wp-content/uploads/2023/10/Cream-1-300x210.png 300w, https://myphamome.com/wp-content/uploads/2023/10/Cream-1-768x538.png 768w, https://myphamome.com/wp-content/uploads/2023/10/Cream-1-1000x700.png 1000w, https://myphamome.com/wp-content/uploads/2023/10/Cream-1.png 1200w" sizes="(max-width: 1020px) 100vw, 1020px"/>
+                                    </a>
+                                    <div class="align_content">
+                                        <div class="post-meta is-normal">
+                                            <span class="post-date">26.10.2023</span>
+                                        </div>
+                                        <h3>
+                                            <a href="https://myphamome.com/kem-xoa-tham-mo-seo-tai-tao-da-make9-hydration-peptide-cream/" title="Kem xóa thâm, mờ sẹo, tái tạo da Make9 Hydration Peptide Cream">Kem xóa thâm, mờ sẹo, tái tạo da Make9 Hydration Peptide Cream </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside id="media_image-2" class="widget widget_media_image">
+                            <img width="282" height="151" src="https://myphamome.com/wp-content/uploads/2022/10/banner-sb.jpg" class="image wp-image-387  attachment-full size-full" alt="" decoding="async" loading="lazy" style="max-width: 100%; height: auto;" srcset="https://myphamome.com/wp-content/uploads/2022/10/banner-sb.jpg 282w, https://myphamome.com/wp-content/uploads/2022/10/banner-sb-270x145.jpg 270w" sizes="(max-width: 282px) 100vw, 282px"/>
+                        </aside>
+                        <aside id="tag_cloud-2" class="widget widget_tag_cloud">
+                            <span class="widget-title ">
+                                <span>Tag</span>
+                            </span>
+                            <div class="is-divider small"></div>
+                            <div class="tagcloud">
+                                <a href="https://myphamome.com/tag/cosmetic/" class="tag-cloud-link tag-link-20 tag-link-position-1" style="font-size: 22pt;" aria-label="#cosmetic (14 mục)">#cosmetic</a>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+                <div class="large-12 col">
+                    <div class="singlePost-related">
+                        <div class="align-center">
+                            <div class="uni-heading mb">
+                                <h2 class="uni-title text-center">
+                                    <span class="section-title-main">Bài viết liên quan</span>
+                                </h2>
+                            </div>
+                            <div class="blog-shortcode">
+                                <div class="row large-columns-4 medium-columns-3 small-columns-2 slider row-slider slider-nav-reveal slider-nav-push" data-flickity-options='{"imagesLoaded": true, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true,"pageDots": true, "rightToLeft": false, "autoPlay" : false}'>
+                                    <div class="col post-item post-1 post-layouts post-posts show-cat-badge">
+                                        <div class="col-inner">
+                                            <a href="https://myphamome.com/tron-bo-san-pham-cham-da-sang-min-sach-tham-mun-deu-mau-cua-make9/" class="plain">
+                                                <div class="box box-text-bottom box-blog-post has-hover">
+                                                    <div class="box-image show-cat-badge" style="width:100%;">
+                                                        <div class="image-zoom image-cover" style="padding-top:65%;">
+                                                            <img width="865" height="650" src="https://myphamome.com/wp-content/uploads/2023/11/Web-2.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://myphamome.com/wp-content/uploads/2023/11/Web-2.jpg 865w, https://myphamome.com/wp-content/uploads/2023/11/Web-2-300x225.jpg 300w, https://myphamome.com/wp-content/uploads/2023/11/Web-2-768x577.jpg 768w" sizes="(max-width: 865px) 100vw, 865px"/>
+                                                        </div>
+                                                        <p class="cat-label cat-badge">
+                                                            <span class="section-title-main"></span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="box-text text-center">
+                                                        <div class="box-text-inner blog-post-inner">
+                                                            <h3 class="post-title is-large ">Trọn bộ sản phẩm chăm da sáng mịn, sạch thâm mụn, đều màu của Make9</h3>
+                                                            <div class="post-meta is-small">
+                                                                <span class="author">
+                                                                    By <aut>OME-KH</aut>
+                                                                </span>
+                                                                <span>22.11.2023 </span>
+                                                            </div>
+                                                            <div class="is-divider"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col post-item post-2 post-layouts post-posts show-cat-badge">
+                                        <div class="col-inner">
+                                            <a href="https://myphamome.com/nuoc-uong-tre-hoa-da-wellit-renew-collagen/" class="plain">
+                                                <div class="box box-text-bottom box-blog-post has-hover">
+                                                    <div class="box-image show-cat-badge" style="width:100%;">
+                                                        <div class="image-zoom image-cover" style="padding-top:65%;">
+                                                            <img width="1020" height="574" src="https://myphamome.com/wp-content/uploads/2023/11/Web1-avatar-2.png" class="attachment-large size-large wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://myphamome.com/wp-content/uploads/2023/11/Web1-avatar-2.png 1024w, https://myphamome.com/wp-content/uploads/2023/11/Web1-avatar-2-300x169.png 300w, https://myphamome.com/wp-content/uploads/2023/11/Web1-avatar-2-768x432.png 768w, https://myphamome.com/wp-content/uploads/2023/11/Web1-avatar-2-1000x563.png 1000w" sizes="(max-width: 1020px) 100vw, 1020px"/>
+                                                        </div>
+                                                        <p class="cat-label cat-badge">
+                                                            <span class="section-title-main"></span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="box-text text-center">
+                                                        <div class="box-text-inner blog-post-inner">
+                                                            <h3 class="post-title is-large ">Nước uống trẻ hóa da Wellit Re:new Collagen</h3>
+                                                            <div class="post-meta is-small">
+                                                                <span class="author">
+                                                                    By <aut>OME-KH</aut>
+                                                                </span>
+                                                                <span>20.11.2023 </span>
+                                                            </div>
+                                                            <div class="is-divider"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col post-item post-3 post-layouts post-posts show-cat-badge">
+                                        <div class="col-inner">
+                                            <a href="https://myphamome.com/danh-bat-tham-nam-trang-sang-ngoc-trai-cung-bo-3-san-pham-louisviel/" class="plain">
+                                                <div class="box box-text-bottom box-blog-post has-hover">
+                                                    <div class="box-image show-cat-badge" style="width:100%;">
+                                                        <div class="image-zoom image-cover" style="padding-top:65%;">
+                                                            <img width="1020" height="574" src="https://myphamome.com/wp-content/uploads/2023/11/louisviel.png" class="attachment-large size-large wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://myphamome.com/wp-content/uploads/2023/11/louisviel.png 1024w, https://myphamome.com/wp-content/uploads/2023/11/louisviel-300x169.png 300w, https://myphamome.com/wp-content/uploads/2023/11/louisviel-768x432.png 768w, https://myphamome.com/wp-content/uploads/2023/11/louisviel-1000x563.png 1000w" sizes="(max-width: 1020px) 100vw, 1020px"/>
+                                                        </div>
+                                                        <p class="cat-label cat-badge">
+                                                            <span class="section-title-main"></span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="box-text text-center">
+                                                        <div class="box-text-inner blog-post-inner">
+                                                            <h3 class="post-title is-large ">Đánh bật thâm nám, trắng sáng ngọc trai cùng bộ 3 sản phẩm Louisviel</h3>
+                                                            <div class="post-meta is-small">
+                                                                <span class="author">
+                                                                    By <aut>OME-KH</aut>
+                                                                </span>
+                                                                <span>16.11.2023 </span>
+                                                            </div>
+                                                            <div class="is-divider"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col post-item post-4 post-layouts post-posts show-cat-badge">
+                                        <div class="col-inner">
+                                            <a href="https://myphamome.com/tay-te-bao-chet-bi-quyet-cho-lan-da-min-mang/" class="plain">
+                                                <div class="box box-text-bottom box-blog-post has-hover">
+                                                    <div class="box-image show-cat-badge" style="width:100%;">
+                                                        <div class="image-zoom image-cover" style="padding-top:65%;">
+                                                            <img width="1020" height="574" src="https://myphamome.com/wp-content/uploads/2023/11/Web-1.png" class="attachment-large size-large wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://myphamome.com/wp-content/uploads/2023/11/Web-1.png 1024w, https://myphamome.com/wp-content/uploads/2023/11/Web-1-300x169.png 300w, https://myphamome.com/wp-content/uploads/2023/11/Web-1-768x432.png 768w, https://myphamome.com/wp-content/uploads/2023/11/Web-1-1000x563.png 1000w" sizes="(max-width: 1020px) 100vw, 1020px"/>
+                                                        </div>
+                                                        <p class="cat-label cat-badge">
+                                                            <span class="section-title-main"></span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="box-text text-center">
+                                                        <div class="box-text-inner blog-post-inner">
+                                                            <h3 class="post-title is-large ">Tẩy tế bào chết &#8211;Bí quyết cho làn da mịn màng</h3>
+                                                            <div class="post-meta is-small">
+                                                                <span class="author">
+                                                                    By <aut>OME-KH</aut>
+                                                                </span>
+                                                                <span>13.11.2023 </span>
+                                                            </div>
+                                                            <div class="is-divider"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col post-item post-5 post-layouts post-posts show-cat-badge">
+                                        <div class="col-inner">
+                                            <a href="https://myphamome.com/tinh-chat-duong-trang-mo-tham-tri-nam-natural-radiance-essence/" class="plain">
+                                                <div class="box box-text-bottom box-blog-post has-hover">
+                                                    <div class="box-image show-cat-badge" style="width:100%;">
+                                                        <div class="image-zoom image-cover" style="padding-top:65%;">
+                                                            <img width="1020" height="714" src="https://myphamome.com/wp-content/uploads/2023/11/avatar-1-1024x717.png" class="attachment-large size-large wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://myphamome.com/wp-content/uploads/2023/11/avatar-1-1024x717.png 1024w, https://myphamome.com/wp-content/uploads/2023/11/avatar-1-300x210.png 300w, https://myphamome.com/wp-content/uploads/2023/11/avatar-1-768x538.png 768w, https://myphamome.com/wp-content/uploads/2023/11/avatar-1-1000x700.png 1000w, https://myphamome.com/wp-content/uploads/2023/11/avatar-1.png 1200w" sizes="(max-width: 1020px) 100vw, 1020px"/>
+                                                        </div>
+                                                        <p class="cat-label cat-badge">
+                                                            <span class="section-title-main"></span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="box-text text-center">
+                                                        <div class="box-text-inner blog-post-inner">
+                                                            <h3 class="post-title is-large ">Tinh chất dưỡng trắng, mờ thâm, trị nám &#8211;Natural Radiance Essence</h3>
+                                                            <div class="post-meta is-small">
+                                                                <span class="author">
+                                                                    By <aut>OME-KH</aut>
+                                                                </span>
+                                                                <span>08.11.2023 </span>
+                                                            </div>
+                                                            <div class="is-divider"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </main>
+<!--footer-->
+<div class="footer">
+    <div class="grid wide">
+        <div class="row">
+            <div class="col l-4 m-6 s-12">
+                <h3 class="footer__title">Menu</h3>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Sản phẩm bán chạy</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Sản phẩm mới</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Dưỡng da</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Trang điểm</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l-4 m-6 s-12">
+                <h3 class="footer__title">Hỗ trợ khách hàng</h3>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Hướng dẫn mua hàng</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Giải đáp thắc mắc</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Chính sách mua hàng</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Chính sách đổi trả</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l-4 m-6 s-12">
+                <a href="contact.html" class="footer__title"><h3 >Liên hệ</h3></a> 
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <span class="footer__text">
+                                <i class="fas fa-map-marked-alt"></i> 12, Chùa Bộc, Quang Trung, Đống Đa, Hà Nội
+                            </span>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <i class="fas fa-phone"></i> 0378998765
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <i class="fas fa-envelope"></i> muoicosmetics@gmail.com
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <div class="social-group">
+                            <a href="#" class="social-item"><i class="fab fa-facebook-f"></i>
+                                </a>
+                            <a href="#" class="social-item"><i class="fab fa-twitter"></i>
+                                </a>
+                            <a href="#" class="social-item"><i class="fab fa-pinterest-p"></i>
+                                </a>
+                            <a href="#" class="social-item"><i class="fab fa-invision"></i>
+                                </a>
+                            <a href="#" class="social-item"><i class="fab fa-youtube"></i>  
+                                </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Form -->
+<div class="ModalForm">
+    <!-- form signup -->
+    <div class="modal" id="my-Register">
+        <a href="#" class="overlay-close"></a>
+      <div class="authen-modal register">
+            <div class="signup">
+                <div class="signup__container">
+                    <h1>Đăng Ký</h1>
+                    <form action="">
+                    <!--<h5>Họ tên</h5>--> 
+                        <input id="username" type="text" class="input-signup-username" placeholder="Họ tên*"/>
+                        <!--<h5>Email</h5>-->
+                        <input id="email" type="text" class="input-signup-email" placeholder="Email*"/>
+                        <!--<h5>Password</h5>-->
+                        <input id="password" type="password" class="input-signup-password" placeholder="Password*"/>
+                        <!--<h5>Confirm Password</h5>-->
+                        <input id="confirmpassword" type="password" class="input-signup-confirmpassword" placeholder="Confirm Password*"/>
+                        
+                        <button id="btn" type="submit" class="signup__signInButton">Đăng Ký</button>
+                    </form>
+                    <a href="#my-Login" class="signup__registerButton">Đăng Nhập</a>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- form login -->
+    <div class=" modal" id="my-Login">
+        <a href="#" class="overlay-close"></a>
+        <div class="authen-modal register">
+            <div class="login">
+                <div class="login__container">
+                    <h1>Đăng Nhập</h1>
+                    <form action="">
+                        <!--<h5>Họ tên</h5>-->
+                        <input id="username" type="text" class="input-login-username" placeholder="Họ tên*"/>
+                        <!--<h5>Email</h5>-->
+                        <input id="email" type="text" class="input-login-email" placeholder="Email*"/>
+                        <!--<h5>Password</h5>-->
+                        <input id="password" type="password" class="input-login-password" placeholder="Password*"/>
+                        <label for="rememberMe">
+                            <input type="checkbox" id="rememberMe" class="remember"> Remember Password
+                        </label>
+                        <button type="submit" class="login__signInButton">Đăng Nhập</button>
+                    </form>
+                    <a href="#my-Register" class="login__registerButton">Create a new account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="up-top" id="upTop" onclick="goToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+</div>
+
+    <script>
+        $('.owl-carousel.hight').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+        $('.owl-carousel.news').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 2
+                }
+            }
+        })
+        $('.owl-carousel.bands').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+    <!-- Script common -->
+    <script src="assets/js/signup.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="./assets/js/homeScript.js"></script>
+    <script src="./assets/js/commonscript.js"></script>
+    
+</body>
+</html>
